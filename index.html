@@ -15,7 +15,12 @@
   <body>
     <div class="container-sm">
       <!-- dngn container ini kita akan membuat sebuah container yang sudah ada style sperti jarak lebar dan lain lain sesuai jenis container nya, sperti container-sm (small). container-md(medium), container-lg(large), container-xl(xtralarge) dll, lihat aja di bootstrap (about container) -->
-        <h1>Hi there</h1>
+      <h1>Hi there</h1>
+      <button class="btn btn-primary" type="button">Submit</button>
+      <a class="btn btn-outline-danger btn-lg" type="button">Submit</a>
+      <!-- nah kalian bisa menggunakan nya sperti ini dngn outline atau bukan dan bisa menggunakan nya di anchor-->
+       <button class="btn btn-warning btn-sm" type="button">Submit</button>
+       <!-- kalian juga bisa menambahkan ukuran buttn dngn sm(small) dan lg(large) -->
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, placeat
         facere unde, cum optio natus harum quod corporis architecto cupiditate,
@@ -25,6 +30,18 @@
         architecto! Rerum placeat assumenda, autem voluptates officia ipsum
         sequi ab quibusdam accusantium praesentium molestias exercitationem?
       </p>
+      <div class="d-grid gap-2">
+        <button class="btn btn-outline-primary" type="button">Submit</button>
+        <!-- ini adalah button yang akan menyesuaikan ukuran nya sama dngn container kita -->
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-warning" type="button">Button</button>
+        <!-- adapun button dngan posisi ditengah tengah ditengah tengah -->
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-info me-md-2" type="button">Submit</button>
+        <!-- ada juga button yang akan memposisikan letak nya di pojok kanan bawah -->
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
