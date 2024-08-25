@@ -13,66 +13,14 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <div class="container-sm">
-      <!-- dngn container ini kita akan membuat sebuah container yang sudah ada style sperti jarak lebar dan lain lain sesuai jenis container nya, sperti container-sm (small). container-md(medium), container-lg(large), container-xl(xtralarge) dll, lihat aja di bootstrap (about container) -->
-      <h1>Hi there</h1>
-      <button class="btn btn-primary" type="button">Submit</button>
-      <a class="btn btn-outline-danger btn-lg" type="button">Submit</a>
-      <!-- nah kalian bisa menggunakan nya sperti ini dngn outline atau bukan dan bisa menggunakan nya di anchor-->
-      <button class="btn btn-warning btn-sm" type="button">Submit</button>
-      <!-- kalian juga bisa menambahkan ukuran buttn dngn sm(small) dan lg(large) -->
-       <button class="btn btn-info position-relative" type="button">Alert
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          99+
-          <span class="visually-hidden">unread messages</span>
-        </span>
-        <!-- nah ini kita menjadikan button dngn alert, dimana disini kita harus menambahkan class
-         "position-relative" terlebih dahulu lalu masukan span nya (info lebih lengkap cek di web bootstrap) -->
-       </button>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, placeat
-        facere unde, cum optio natus harum quod corporis architecto cupiditate,
-        repellendus voluptates aspernatur ducimus ea! Voluptates asperiores
-        delectus nesciunt odio. A, dolores debitis ipsum, saepe, explicabo odio
-        hic dignissimos laudantium consequatur magni doloremque sint expedita
-        architecto! Rerum placeat assumenda, autem voluptates officia ipsum
-        sequi ab quibusdam accusantium praesentium molestias exercitationem?
-      </p>
-      <div class="d-grid gap-2">
-        <button class="btn btn-outline-primary" type="button">Submit</button>
-        <!-- ini adalah button yang akan menyesuaikan ukuran nya sama dngn container kita -->
-      </div>
-      <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-warning" type="button">Button</button>
-        <!-- adapun button dngan posisi ditengah tengah ditengah tengah -->
-      </div>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button class="btn btn-outline-info me-md-2" type="button">
-          Submit
-        </button>
-        <!-- ada juga button yang akan memposisikan letak nya di pojok kanan bawah -->
-      </div>
-      <h3>
-        Fancy display heading
-        <small class="text-body-secondary">With faded secondary text</small>
-      </h3>
-      <p class="lead">
-        This is a lead paragraph. It stands out from regular paragraphs.
-      </p>
-      <figure class="text-center">
-        <blockquote class="blockquote">
-          <p>
-            Sejauh apapun jalan yang kita tempuh, tujuan akhir akan selalu rumah
-          </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title"> Fiersa Besari</cite>
-        </figcaption>
-      </figure>
-      <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
-        <a type="button" class="btn btn-outline-danger" href="https://www.youtube.com/@Dipki.M">Youtube</a>
-        <a type="button" class="btn btn-outline-primary" href="https://www.instagram.com/difkimhrza/">Instagram</a>
-        <a type="button" class="btn btn-outline-info" href="https://www.linkedin.com/in/difkimahriza/">Linkedin</a>
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-8 col-lg-3 bg-primary">kolom</div>
+        <!-- nah dngn menambahkan class (col-md-...)itu berarti saat ukuran nya sesuai dngn md (medium) maka kolom 1 nilainya 8, kolom 2 nilainy 2, kolom 3 nilainya 2, dimana nilai dari md ialah lebih kecil dari 992px -->
+        <div class="col col-md-2 col-lg-6 bg-warning">kolom</div>
+        <div class="col col-md-2 col-lg-3 bg-info">kolom</div>
+        <!-- dngn ini kita membuat responsive kolom, nah krena ketika kalian membuat grid itu nilai
+         ialah 12 jadi jika ingin mengatur ukuran nya masing masing pastikan total dari smua kolom atau div bernilai 12 agar presisi, disini kita membuat contoh dimana kolom kedua ialah yang paling besar ketika dia sedang ditampilkan di sistem yang besar nilai nya yaitu 6, sdngkan 1 dan 3 nilainya adalah 3. dimana total dari tiga kolom ini ialah 12 -->
       </div>
     </div>
     <script
