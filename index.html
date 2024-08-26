@@ -22,6 +22,57 @@
         <!-- dngn ini kita membuat responsive kolom, nah krena ketika kalian membuat grid itu nilai
          ialah 12 jadi jika ingin mengatur ukuran nya masing masing pastikan total dari smua kolom atau div bernilai 12 agar presisi, disini kita membuat contoh dimana kolom kedua ialah yang paling besar ketika dia sedang ditampilkan di sistem yang besar nilai nya yaitu 6, sdngkan 1 dan 3 nilainya adalah 3. dimana total dari tiga kolom ini ialah 12 -->
       </div>
+      <h2 class="display-2">Responsive Article</h2>
+      <div class="row">
+        <!-- dngn perubahan ini akan membuat ukuran sekecil apapun mereka akan tetap stick di dau kolom, nah bagaimana cara mengatasi nya? maka kita akan mensiasati dngn menambhkan ukuran (md) di class col-6 -->
+
+        <!-- NAH SKRG GIMANA KALAU KITA INGIN PADA SAAT DIA UKURAN TERBESAR DIA AKAN TERBAGI MENJADI 4 KOLOM(4 BAGIAN) ? caranya kita tinggal copy dua class tdi lalu dibagi 4 bagian yng akan memnuhi nilai 12, maka akan kita dapat 3, lalu kita tinggal tambahin class col-xl-3 -->
+        <div class="col-md-4 col-xl-3 bg-primary">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+          asperiores dolorum, dicta reprehenderit a, fuga expedita quis minima
+          magni quaerat libero. Hic soluta nam veritatis vel veniam provident
+          asperiores minus? Sit molestiae autem repellendus, ullam nemo iste
+          quae eum, maxime reprehenderit mollitia fuga cumque quos facere ipsa
+          commodi voluptate obcaecati eveniet atque inventore sunt quibusdam
+          culpa, dignissimos praesentium! Quos, corporis!
+        </div>
+        <!-- nah dngn bagini mereka tidak akan menjadi dua, krna sblum ukuran 764 mereka tidak akan membagi dua, jadi kita bisa definisikan ukuran smpai mana dia akan bertumpuk dan di ukuran mana dia akan membagi dua -->
+        <div class="col-md-2 col-xl-3 bg-info">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad nobis
+          laudantium repellendus consectetur eum quae tempora aperiam, expedita,
+          in quas asperiores voluptas saepe dolorum nihil vero autem molestias
+          doloremque! Laborum deleniti vero ab saepe aspernatur quia molestiae
+          quibusdam voluptatibus soluta qui iure omnis magni hic, placeat
+          similique perspiciatis ducimus dolor architecto error, suscipit magnam
+          laudantium aliquid ratione. At, placeat.
+        </div>
+        <div class="col-md-2 col-xl-3 bg-warning">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad nobis
+          laudantium repellendus consectetur eum quae tempora aperiam, expedita,
+          in quas asperiores voluptas saepe dolorum nihil vero autem molestias
+          doloremque! Laborum deleniti vero ab saepe aspernatur quia molestiae
+          quibusdam voluptatibus soluta qui iure omnis magni hic, placeat
+          similique perspiciatis ducimus dolor architecto error, suscipit magnam
+          laudantium aliquid ratione. At, placeat.
+        </div>
+        <div class="col-md-4 col-xl-3 bg-success">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ad nobis
+          laudantium repellendus consectetur eum quae tempora aperiam, expedita,
+          in quas asperiores voluptas saepe dolorum nihil vero autem molestias
+          doloremque! Laborum deleniti vero ab saepe aspernatur quia molestiae
+          quibusdam voluptatibus soluta qui iure omnis magni hic, placeat
+          similique perspiciatis ducimus dolor architecto error, suscipit magnam
+          laudantium aliquid ratione. At, placeat.
+        </div>
+      <div class="col-xl-4">
+        <!-- nah kalau kita kecilin atau besarkan itu nnti gambarny akan brantakan atau tidak responsive, cara agar gambarnya responsive kita tinggal menambahkan class (img-fluid) untuk ketiga gambarnya -->
+        <img src="https://img.freepik.com/free-vector/hand-drawn-bedtime-stories-illustration_23-2151198586.jpg?t=st=1724712391~exp=1724715991~hmac=c34094ad31dfc9ebcbd1c79caa31fcf8f39c512207bc7a8398fa6d93d0522981&w=740" alt="" class="img-fluid">
+      </div>
+      <div class="col-xl-4"><img src="https://img.freepik.com/free-vector/cute-indonesian-local-ghost-cartoon-vector-icon-illustration-people-holiday-icon-isolated-flat_138676-10379.jpg?t=st=1724712430~exp=1724716030~hmac=bfb6a76eca231e7d091faccea7247ff884dc3063805da6134776c3c249d457b2&w=740" alt="" class="img-fluid"></div>
+      <div class="col-xl-4">
+        <img src="https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-72.jpg?t=st=1724712454~exp=1724716054~hmac=3143d4894c86401c05bfc2569ae1740e89af2d6dda49a1b6e21081a189d0845b&w=740" alt="" class="img-fluid">
+      </div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
